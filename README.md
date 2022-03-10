@@ -1,7 +1,5 @@
-#Pixel Engine por LarrocaX v1
-##Creacion 6/3/2022
+# Pixel Engine por LarrocaX v1
+## Creacion 6/3/2022 Uruguay
 
-###Funciones personalizadas{
-    **setPixelColor(A0,'#fff')**  _Pone el Pixel A0 al color deseado puede valor RGB, RGBA Y HEX. El valor de color tiene que estar entre comillas_
-
-}
+### Funciones personalizadas
+- **setPixelColor(A0,'#fff')**  _Puede poner el pixel desde A0 hasta J9 sin comillas. El segundo valor es el color que puede tener un valor RGB, RGBA Y HEX. El valor de color tiene que estar entre comillas_
