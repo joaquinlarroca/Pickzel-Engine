@@ -1,7 +1,3 @@
-###### ❗CTRL+SHIFT+V =  VSCODE MD PREVIEW
-
-</br>
-
 # ![PickzelEngineLogo](https://i.imgur.com/cDEs2UC.png) Pickzel Engine por Joaquin Larroca
 ## Creacion 6/3/2022 Uruguay
 
