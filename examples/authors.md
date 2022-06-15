@@ -1,3 +1,3 @@
 # **Examples Authors**
 
-- [**Walk Around Nature**](game.js) - [Author](https://youtube.com) - [v1](../PE-v1/)
+- [**Walk Around Nature**](game.js) - [joaquinlarroca](https://github.com/joaquinlarroca) - [v1](../PE-v1/)
