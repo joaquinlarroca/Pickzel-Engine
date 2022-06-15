@@ -1,11 +1,10 @@
 let Settings = {
-    gameName: 'PICKZEL Engine',
+    gameName: 'Walk Around Nature',
     debug: false, // Puede Ser false true
     debugTestImage: false, // Puede Ser false true
     startScreen: true, // Entre true o false
     audioVolume: 0.5, //Valor entre 0.0 y 1.0 (0.0 = 0% y 1.0 = 100%)
     strangeValues: false, // Puede ser false true
-    isMobileCompatible: true, // Puede ser false true
     forceMobileCTRLOnPC: true, // Puede ser false true
 }
 //! Varibiales con colores
@@ -191,9 +190,6 @@ setInterval(function () {
             document.getElementById("menu").innerText = "X";
             document.getElementById('MobileCTRL').style.display = "initial";
         }
-    }
-    if(Settings.isMobileCompatible == false){
-        document.getElementById('MobileCTRL').style.display = "none";
     }
 })
 //!FUNCIONES
