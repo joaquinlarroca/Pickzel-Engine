@@ -1,0 +1,8 @@
+up
+left 
+right 
+down 
+a 
+b 
+x 
+menu
