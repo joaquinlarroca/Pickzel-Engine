@@ -1,0 +1,15 @@
+Error Handler ID's
+
+0- Try reading the documentation: https://github.com/joaquinlarroca/Pickzel-Engine/blob/main/README.md
+1- Given pixel not found or not valid pixel
+2- Given color not found
+3- Given image URL not found or failed to load
+4- Rotation null, undefined or not a number
+5- Rotation is a strange value, turn it on to use (VALUE) degree/s as a Rotation
+6- Bit is null, undefined or not a number from 1 to 5
+7- Text is null, undefined or empty
+8- Time is null, undefined, not a number or not beetwen 0 and 10000
+9- PlaybackRate is not from 0.1 to 1
+10- Key is not in (VALUE)+KeyCodesList, empty, null or not a string
+11- Code to execute is null, undefined or not a string
+12- Opacity value is not a number or is not between 0 and 1

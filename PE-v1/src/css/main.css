@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+    font-family: 'Nunito', sans-serif;
+    -webkit-user-drag: none;
+}
+body{
+    background-color: #333333;
+}
+.preLoader{
+    z-index: 4;
+    position: fixed;
+    background-color: #222222;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preLoader img{
+    width: calc(10vh + 10vw / 2);
+    height: calc(10vh + 10vw / 2);
+    border-radius: 25%;
+    box-shadow: 0px 0px 15px 5px #131313;
+}
+.pixelContainer{
+    z-index: 50;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-size: calc(var(--PixContainSize)/25);
+    text-shadow: 1px 1px #000000 , -1px -1px #000000;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    width: var(--PixContainSize);
+    height: var(--PixContainSize);
+    border: 2px solid #5a5a5a;
+    border-radius: 10px;
+    background: #222222;
+    background-size: cover;
+}
+.pixelContainer span{
+    z-index: -1;
+    float: left;
+    width: calc(var(--PixContainSize)/10);
+    height: calc(var(--PixContainSize)/10);
+    outline: var(--OutlineDebug);
+    outline-offset: var(--OutlineOffsetDebug);
+}
+.StartScreen{
+    z-index: 51;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(20, 20, 20, 0.7);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.StartScreen img{
+    width: calc(10vh + 10vw / 2);
+    max-width: 500px;
+    margin-top: 10vh;
+    border-radius: 5px;
+}
+.StartScreen h1{
+    color: white;
+    padding-top: 5vh;
+    font-size: 3.5vw,max(800px);
+}
+.StartScreen button{
+    margin-top: 25vh;
+    width: 20%;
+    max-width: 250px;
+    height: 10%;
+    border-radius: 10px;
+    min-width: 150px;
+    border: none;
+    font-size: 2vw;
+    color: white;
+    background-color: rgb(155, 219, 45);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 300ms;
+}
+.StartScreen button:hover{
+    background-color: rgb(128, 176, 45);
+    transition: 300ms;
+}
+.textContainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 200ms;
+}
+.textContainer div{
+    text-align: center;
+    position: relative;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #222;
+    width: fit-content;
+    max-width: 100%;
+    height: fit-content;
+    color: whitesmoke;
+}
+.textContainer div #textShown{
+    margin-left: 1vmin;
+    margin-right: 1vmin;
+    font-size: 5vmin;
+}
+.MobileCTRL{
+    display: none;
+    position: absolute;
+    top: 85vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 15%;
+    max-height: 18vh;
+    min-height: 150px;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: rgba(255, 255, 0, 0);
+}
+.MobileCTRL div{
+    border-radius: 25%;
+    float: left;
+    position: relative;
+    width: calc(100%/6);
+    height: calc(100%/3);
+    font-size: 150%;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    transition: 200ms;
+}
+.MobileCTRL div img{
+    width: 80%;
+}
+.MobileCTRL #up{
+    background: var(--MobileMovKeys);
+}
+.MobileCTRL #right{
+    background:  var(--MobileMovKeys);
+}
+.MobileCTRL #down{
+    background:  var(--MobileMovKeys);
+}
+.MobileCTRL #left{
+    background:  var(--MobileMovKeys);
+}
+.MobileCTRL #a{
+    background:  var(--MobileABKeys);
+}
+.MobileCTRL #b{
+    background: var(--MobileABKeys);
+}
+.MobileCTRL #x{
+    background: var(--MobileXMenuKeys);
+}
+.MobileCTRL #menu{
+    background: var(--MobileXMenuKeys);
+}
+#MobileCTRL div:focus{
+    opacity: 0.7;
+    transition: 200ms;
+}
+:root{
+    --PixContainSize: 55vmin;
+    --OutlineDebug: transparent;
+    --OutlineOffsetDebug: transparent;
+    --MobileMovKeys: #505050;
+    --MobileABKeys: #ef9683;
+    --MobileXMenuKeys: #ffc171;
+}
+
+@media (max-width: 810px){
+    .MobileCTRL{
+        display: initial;
+    }
+    .pixelContainer{
+        top: 45vh;
+    }
+    .StartScreen button{
+        font-size: 8vmin;
+    }
+    .StartScreen h1{
+        font-size: 4.5vw;
+    }
+    :root{
+        --PixContainSize: 75vmin;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 1024px){
+    .StartScreen button{
+        font-size: 6vmin;
+    }
+    .StartScreen h1{
+        font-size: 3.5vw;
+    }
+    .MobileCTRL{
+        display: initial;
+        width: 60%;
+        height: 15%;
+        max-height: 18vh;
+        min-height: 320px;
+        min-width: 300px;
+        max-width: 600px;
+    }
+}
+@media (max-height: 750px){
+    .StartScreen button{
+        font-size: 7vw;
+    }
+}
+@media (max-height: 550px){
+    .MobileCTRL{
+        display: none;
+    }
+    .pixelContainer{
+        display: none;
+    }
+    .StartScreen button{
+        display: none;
+    }
+}
+@media (min-width: 1025px){
+    .MobileCTRL{
+        top: 50%;
+        left: 85vw;
+        width: 15vw;
+        height: 15vh;
+        max-height: 15vh;
+        min-height: 50px;
+        min-width: 300px;
+        max-width: 10000px;
+    }
+}
+

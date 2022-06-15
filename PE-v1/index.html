@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PICKZEL EINGINE GAME">
+    <meta name="author" content="Larroca">
+    <meta name="designer" content="Larroca">
+    <meta name="og:title" content="PICKZEL GAME"/>
+    <meta name="og:type" content="game"/>
+    <meta name="og:image" content="https://i.imgur.com/cDEs2UC.png"/>
+    <meta name="og:description" content="A PICKZEL game"/>    
+    <title>PICKZEL Engine</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="icon" type="image/png" href="src/logo/logoX16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="src/logo/logoX32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="src/logo/logoX64.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="src/logo/logoX128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="src/logo/logoX256.png" sizes="256x256">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body onload="document.getElementById('loader').style.display = 'none'; StartScreen();">
+    <div class="preLoader" id="loader">
+        <img src="src/logo/logoX256.gif" alt="LOADING">
+    </div>
+    <div class="StartScreen" id="ss">
+        <img src="src/Logo/logoX256.png">
+        <h1 id="gameTitle"></h1>
+        <button id="playButton">Play</button>
+    </div>
+    <div class="pixelContainer">
+        <!--!A 0-9-->
+        <span id="A0"></span>
+        <span id="A1"></span>
+        <span id="A2"></span>
+        <span id="A3"></span>
+        <span id="A4"></span>
+        <span id="A5"></span>
+        <span id="A6"></span>
+        <span id="A7"></span>
+        <span id="A8"></span>
+        <span id="A9"></span>
+        <!--!B 0-9-->
+        <span id="B0"></span>
+        <span id="B1"></span>
+        <span id="B2"></span>
+        <span id="B3"></span>
+        <span id="B4"></span>
+        <span id="B5"></span>
+        <span id="B6"></span>
+        <span id="B7"></span>
+        <span id="B8"></span>
+        <span id="B9"></span>
+        <!--!C 0-9-->
+        <span id="C0"></span>
+        <span id="C1"></span>
+        <span id="C2"></span>
+        <span id="C3"></span>
+        <span id="C4"></span>
+        <span id="C5"></span>
+        <span id="C6"></span>
+        <span id="C7"></span>
+        <span id="C8"></span>
+        <span id="C9"></span>
+        <!--!D 0-9-->
+        <span id="D0"></span>
+        <span id="D1"></span>
+        <span id="D2"></span>
+        <span id="D3"></span>
+        <span id="D4"></span>
+        <span id="D5"></span>
+        <span id="D6"></span>
+        <span id="D7"></span>
+        <span id="D8"></span>
+        <span id="D9"></span>
+        <!--!E 0-9-->
+        <span id="E0"></span>
+        <span id="E1"></span>
+        <span id="E2"></span>
+        <span id="E3"></span>
+        <span id="E4"></span>
+        <span id="E5"></span>
+        <span id="E6"></span>
+        <span id="E7"></span>
+        <span id="E8"></span>
+        <span id="E9"></span>
+        <!--!F 0-9-->
+        <span id="F0"></span>
+        <span id="F1"></span>
+        <span id="F2"></span>
+        <span id="F3"></span>
+        <span id="F4"></span>
+        <span id="F5"></span>
+        <span id="F6"></span>
+        <span id="F7"></span>
+        <span id="F8"></span>
+        <span id="F9"></span>
+        <!--!G 0-9-->
+        <span id="G0"></span>
+        <span id="G1"></span>
+        <span id="G2"></span>
+        <span id="G3"></span>
+        <span id="G4"></span>
+        <span id="G5"></span>
+        <span id="G6"></span>
+        <span id="G7"></span>
+        <span id="G8"></span>
+        <span id="G9"></span>
+        <!--!H 0-9-->
+        <span id="H0"></span>
+        <span id="H1"></span>
+        <span id="H2"></span>
+        <span id="H3"></span>
+        <span id="H4"></span>
+        <span id="H5"></span>
+        <span id="H6"></span>
+        <span id="H7"></span>
+        <span id="H8"></span>
+        <span id="H9"></span>
+        <!--!I 0-9-->
+        <span id="I0"></span>
+        <span id="I1"></span>
+        <span id="I2"></span>
+        <span id="I3"></span>
+        <span id="I4"></span>
+        <span id="I5"></span>
+        <span id="I6"></span>
+        <span id="I7"></span>
+        <span id="I8"></span>
+        <span id="I9"></span>
+        <!--!J 0-9-->
+        <span id="J0"></span>
+        <span id="J1"></span>
+        <span id="J2"></span>
+        <span id="J3"></span>
+        <span id="J4"></span>
+        <span id="J5"></span>
+        <span id="J6"></span>
+        <span id="J7"></span>
+        <span id="J8"></span>
+        <span id="J9"></span>
+    </div>
+    <div class="aduioContainer" id="audio">
+        <div id="bit1"></div>
+        <div id="bit2"></div>
+        <div id="bit3"></div>
+        <div id="bit4"></div>
+        <div id="bit5"></div>
+    </div>
+    <div id="textC" class="textContainer">
+        <div><a id="textShown"></a></div>
+    </div>
+    <div class="MobileCTRL" id="MobileCTRL">
+        <div id="empty"></div>
+        <div id="up" tabindex="0"><img id="up" src="src/icons/arrow-up.svg"></div>
+        <div id="empty"></div>
+        <div id="empty"></div>
+        <div id="x" tabindex="0"><img  id="x" src="src/icons/x.svg"></div>
+        <div id="menu" tabindex="0"><img id="menu" src="src/icons/triangle.svg"></div>
+
+        <div id="left" tabindex="0"><img id="left" src="src/icons/arrow-left.svg"></div>
+        <div id="empty"></div>
+        <div id="right" tabindex="0"><img id="right" src="src/icons/arrow-right.svg"></div>
+        <div id="empty"></div>
+        <div id="empty"></div>
+        <div id="empty"></div>
+
+        <div id="empty"></div>
+        <div id="down" tabindex="0"><img id="down" src="src/icons/arrow-down.svg"></div>
+        <div id="empty"></div>
+        <div id="empty"></div>
+        <div id="a" tabindex="0"><img id="a" src="src/icons/circle.svg"></div>
+        <div id="b" tabindex="0"><img id="b" src="src/icons/square.svg"></div>
+
+    </div>
+<script type="text/javascript" src="src/javascript/engine.js"></script>
+<script type="text/javascript" src="src/javascript/games.js"></script>
+</body>
+</html>
