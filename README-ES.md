@@ -1,4 +1,4 @@
-# ![PickzelEngineLogo](PE-v1/src/logo/logoX32.png) Pickzel Engine por Joaquin Larroca
+# ![PickzelEngineLogo](./main-src/logo/logoX32.png) Pickzel Engine por Joaquin Larroca
 ## Creacion 6/3/2022 Uruguay
 
 </br>
@@ -22,7 +22,7 @@
 </br>
 
 ## **Habilita el modo debug para ver esta cuadricula**
-![PickzelEngineGridx10](PE-v1/src/img/grid.png)
+![PickzelEngineGridx10](./main-src/grid.png)
 
 </br>
 
