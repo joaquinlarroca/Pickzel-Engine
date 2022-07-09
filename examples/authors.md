@@ -1,3 +1,3 @@
 # ![AUTHORSIcon](../main-src/authorsIcon.png) **Examples Authors**
 
-- [**Walk Around Nature**](game.js) - [joaquinlarroca](https://github.com/joaquinlarroca) - [v1](../PE-v1/)
+- [**Walk Around Nature**](./walk-arround-nature(PE-v1)/src/javascript/games.js) - [joaquinlarroca](https://github.com/joaquinlarroca) - [v1](../PE-v1/)
